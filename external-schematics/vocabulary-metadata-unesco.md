@@ -1,6 +1,6 @@
 # Vocabulary Metadata Schematic 
-## Provider: UNESCO 
-## Source: http://vocabularies.unesco.org/
+Provider: UNESCO   
+Source: [http://vocabularies.unesco.org/](http://vocabularies.unesco.org/)  
 
 ## Properties
 * Title
