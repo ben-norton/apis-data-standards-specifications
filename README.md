@@ -1,3 +1,3 @@
 # Technical Documentation Library
-### Target technology: data standards and the construction of RESTful APIs
+### Target technology: Data Standards and the construction of RESTful APIs
 
