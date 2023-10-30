@@ -1,1 +1,1 @@
-## Technical specification recommendations associated with the design of RESTful APIs
+Technical specification recommendations associated with the design of RESTful APIs
