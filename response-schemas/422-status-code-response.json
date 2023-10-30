@@ -1,0 +1,52 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "$id": "",
+    "title": "API Response Schema - Error 422",
+    "description": "Standard Response Schema for the Error Code 422",
+    "type": "object",
+    "properties": {
+        "status": {"type": "string"},
+        "error": {"$ref": "#/definitions/error_type"}
+    },
+    "definitions": {
+        "rules_type": {
+            "type": "array",
+            "minItems": 0,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "rule": {"type": "string"},
+                    "message": {"type": "string"}
+                },
+                "required": [
+                    "rule",
+                    "message"
+                ]
+            }
+        },
+        "details_type": {
+            "type": "array",
+            "minItems": 0,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "parameter": {"type": "string"},
+                    "rules": {"$ref": "#/definitions/rules_type"}
+                },
+                "required": [
+                    "parameter",
+                    "rules"
+                ]
+            }
+        },
+        "error_type": {
+            "type": "object",
+            "properties": {
+                "code": {"type": "integer"},
+                "error": {"type": "string"},
+                "message": {"type": "string"},
+                "details": {"$ref": "#/definitions/details_type"}
+            }
+        }
+    }
+}
